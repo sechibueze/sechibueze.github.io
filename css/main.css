@@ -1,0 +1,412 @@
+/*
+***** Samuel Chibueze
+***** https://sechibueze.github.io
+***** 
+*/
+/************ CONSTANTS *************/
+* {
+  margin: 0rem;
+  padding: 0rem;
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
+  font-family: "Montserrat", "Roboto", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  display: block;
+}
+@media (max-width: 760px) {
+  .container {
+    width: 97%;
+  }
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.card {
+  display: block;
+  width: 30%;
+  border-radius: 1.25rem;
+  box-shadow: 0px 2px 2px #ddd;
+  text-align: left;
+  padding: 0.75rem;
+  margin: 0.5rem auto;
+}
+@media (max-width: 480px) {
+  .card {
+    width: 100%;
+  }
+}
+.card .card-icon, .card .card-image {
+  text-align: center;
+  display: block;
+  height: auto;
+  max-height: 8rem;
+  color: #0d47a1;
+}
+.card .card-title {
+  text-align: center;
+  display: block;
+  padding: 0.5rem 0rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #0d47a1;
+}
+.card .card-body {
+  padding: 0.75rem 0rem;
+  text-align: center;
+  line-height: 1.8;
+}
+.card .card-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding: 0.75rem 0rem;
+}
+
+.cta-block {
+  display: block;
+  padding: 0.75rem 1rem;
+  margin: auto;
+  width: 80%;
+  text-align: center;
+}
+
+.cta, .form-cta, .skills-cta, .about-cta, .banner-buttons .banner-cta {
+  padding: 0.5rem 1rem;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: normal;
+  border: 1px solid #0d47a1;
+  border-radius: 0.3rem;
+  transition: all 1s ease-in;
+}
+@media (max-width: 480px) {
+  .cta, .form-cta, .skills-cta, .about-cta, .banner-buttons .banner-cta {
+    display: block;
+    margin-bottom: 1.5rem;
+  }
+}
+.cta:hover, .form-cta:hover, .skills-cta:hover, .about-cta:hover, .banner-buttons .banner-cta:hover {
+  opacity: 0.8;
+}
+.cta-primary {
+  background-color: #0d47a1;
+  color: #ffffff;
+}
+
+section[id] {
+  padding: 1.8rem 0rem;
+  display: block;
+  width: 100%;
+}
+section[id]:nth-of-type(even) {
+  background-color: #f1f1f1;
+}
+
+.section-title {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 0.75rem 0rem;
+  color: #0d47a1;
+}
+
+.sub-title {
+  display: block;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  line-height: 1.3;
+  font-size: 0.95rem;
+  color: #0d47a1;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  padding: 1.5rem 0rem;
+  flex-basis: auto;
+}
+@media (max-width: 480px) {
+  .flex-container {
+    display: block;
+    margin: auto;
+  }
+}
+
+.btn-icon {
+  margin-right: 8px;
+}
+
+/****************** BANNER ****************/
+#banner {
+  display: block;
+  width: 100%;
+  position: relative;
+  height: 80vh;
+  background-color: #0d47a1;
+  color: #ffffff;
+  padding-top: 2rem;
+  margin: auto;
+  border-bottom: 1px solid #0d47a1;
+}
+@media (max-width: 480px) {
+  #banner {
+    height: 85vh;
+  }
+}
+
+#banner-info {
+  display: block;
+  width: 100%;
+  padding-top: 2rem;
+  display: block;
+  margin: 0.75rem auto;
+  z-index: 9999;
+}
+
+.portfolio-image-id {
+  display: block;
+  width: 10rem;
+  height: 10rem;
+  margin: 0.75rem auto;
+  text-align: center;
+  border: 2px solid #0d47a1;
+  border-radius: 50%;
+  box-shadow: 0px 0px 2px 2px #0d47a1;
+}
+
+.portfolio-id {
+  display: block;
+  margin: 0.75rem auto;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  color: #f1f1f1;
+}
+
+.portfolio-role {
+  display: block;
+  margin: 1rem auto;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #f1f1f1;
+}
+
+.banner-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  margin: 1.5rem auto;
+}
+@media screen and (max-width: 480px) {
+  .banner-buttons {
+    display: block;
+  }
+  .banner-buttons .banner-cta {
+    display: block;
+    margin: 0.75rem auto;
+  }
+}
+.banner-buttons .banner-cta {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  margin-left: 0.5rem;
+}
+.banner-buttons .banner-cta:first-of-type {
+  margin-right: 0.5rem;
+}
+
+.overlay {
+  opacity: 0.7;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0rem;
+  left: 0rem;
+}
+
+/****************** ABOUT ****************/
+.about-info {
+  padding: 0rem 2rem;
+}
+.about-info .section-title {
+  text-align: left;
+}
+.about-info .about-text {
+  line-height: 2;
+  font-size: 1.2rem;
+  margin: 1.5rem 0rem;
+}
+
+.about-cta {
+  background-color: #0d47a1;
+  color: #ffffff;
+}
+
+.about-figure {
+  display: none;
+  margin: auto;
+  text-align: center;
+}
+.about-figure .about-image img {
+  text-align: center;
+  height: 15rem;
+}
+@media (max-width: 800px) {
+  .about-figure {
+    display: none;
+  }
+}
+
+/****************** SKiLLS ****************/
+.skills-cta {
+  margin: 1rem auto;
+  display: block;
+  width: 60%;
+}
+
+/****************** PROJECTS ****************/
+@media (max-width: 640px) {
+  #projects .container .flex-container {
+    display: block;
+    margin: auto;
+  }
+  #projects .container .flex-container .card {
+    width: 90%;
+  }
+}
+
+.contact-form-container {
+  width: 60%;
+  margin: auto;
+}
+@media (max-width: 760px) {
+  .contact-form-container {
+    width: 95%;
+  }
+}
+
+.form-cta {
+  background-color: #0d47a1;
+  color: #ffffff;
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  flex-basis: auto;
+  flex-wrap: wrap;
+}
+.icon-container i {
+  color: #0d47a1;
+  padding: 1rem;
+  background-color: transparent;
+  flex-basis: content;
+}
+
+/****************** CONTACTS ****************/
+.socials {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.socials a {
+  margin: 0.5rem;
+}
+
+.form {
+  display: block;
+  width: 100%;
+  padding: 1rem 0.75rem;
+}
+.form .form-group {
+  display: block;
+  width: 100%;
+  padding: 0.75rem 0rem;
+}
+.form .form-group label {
+  display: block;
+  margin-bottom: 0.25rem;
+}
+.form .form-group .form-control {
+  width: 100%;
+  display: block;
+  text-align: left;
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  box-shadow: 0px 0px 2px 1px #0d47a1;
+}
+.form .form-group input, .form .form-group select, .form .form-group textarea {
+  padding: 0.5rem 1rem;
+  resize: none;
+}
+
+.btn {
+  padding: 0.75rem 1rem;
+}
+
+.link {
+  cursor: pointer;
+}
+.link-btn {
+  display: block;
+  text-align: center;
+  margin: auto;
+  padding: 0.4rem 0.75rem;
+}
+.link-primary {
+  background-color: #0d47a1;
+  color: #fff;
+}
+.link:hover {
+  opacity: 0.8;
+}
+
+.scroll-top {
+  display: none;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  padding: 0.25rem 0.25rem;
+  z-index: 99;
+  background-color: #002171;
+  color: #ffffff;
+}
+
+#footer {
+  display: block;
+  margin: auto;
+  text-align: center;
+  padding: 1rem 0rem;
+  background-color: #002171;
+  color: #ffffff;
+}
+#footer ~ * {
+  margin: 0.5rem auto;
+}
+#footer a {
+  color: #ffffff;
+}
+
+/*# sourceMappingURL=main.css.map */
