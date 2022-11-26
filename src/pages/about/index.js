@@ -1,4 +1,4 @@
-import DataLine from 'components/DataLine';
+// import DataLine from 'components/DataLine';
 import styled from 'styled-components';
 import person from 'assets/images/me.jpg';
 import Experience from 'components/Experience';
