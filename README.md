@@ -1,3 +1,6 @@
 # Samuel Chibueze
 
-## Note
+- Colors
+- Responsiveness
+- Content
+- Domain
