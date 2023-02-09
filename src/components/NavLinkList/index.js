@@ -1,24 +1,23 @@
 import NavLink from '../NavLink';
 import styled from 'styled-components';
 import contactIcon from 'assets/images/contact__icon.svg';
+import aboutIcon from 'assets/images/about__icon.svg';
+import projectIcon from 'assets/images/project__icon.png';
 const links = [
-  {
-    label: 'Home',
-    href: '/',
-    icon: '',
-  },
   {
     label: 'About',
     href: '/about',
+    icon: aboutIcon,
+  },
+  {
+    label: 'Works',
+    href: '/portfolio',
+    icon: projectIcon,
   },
   {
     label: 'Contact',
     href: '/contact',
     icon: contactIcon,
-  },
-  {
-    label: 'Portfolio',
-    href: '/portfolio',
   },
 ];
 const StyledNavLinks = styled.div`

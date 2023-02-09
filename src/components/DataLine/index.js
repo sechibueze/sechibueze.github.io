@@ -9,7 +9,7 @@ const StyledDataLine = styled.div`
   .key {
     justify-self: flex-end;
   }
-  .vaalue {
+  .value {
     justify-self: flex-start;
   }
 `;

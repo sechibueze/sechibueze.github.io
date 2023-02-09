@@ -40,14 +40,16 @@ const StyledHeroContainer = styled.div`
 
     h1 {
       font-family: 'font__bold';
+      font-size: 1.85rem;
       @media screen and (min-width: 980px) {
         font-size: 3.5rem;
       }
     }
-    h2 {
+    h3 {
       font-family: 'font__medium';
+      font-size: 1.2rem;
       @media screen and (min-width: 988px) {
-        font-size: 2.5rem;
+        font-size: 1.5rem;
       }
     }
     .intro-content {
@@ -69,8 +71,17 @@ const HeroHeader = () => {
       <div className='container'>
         <StyledHeroContainer>
           <div className='hero-content'>
-            <h1>Hello, I'm Samuel</h1>
-            <h2>Software Engineer & Educator</h2>
+            <span
+              style={{
+                display: 'inline-block',
+                textAlign: 'left',
+                width: '100%',
+              }}
+            >
+              Hello 👋
+            </span>
+            <h1>Samuel Chibueze</h1>
+            <h3>Software Engineer & Educator</h3>
             <p className='intro-content'>
               Everything I do begins with a vision, and proceed by a blend of
               faith and fact, to deliver value to stakeholders, impacting

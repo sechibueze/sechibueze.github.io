@@ -4,7 +4,14 @@ const Navbar = () => {
   return (
     <StyledNavbar>
       <div>
-        <h1>@computingCEO</h1>
+        <a
+          href='/'
+          style={{
+            textDecoration: 'none',
+          }}
+        >
+          <h1>@computingCEO</h1>
+        </a>
       </div>
       <NavLinkList />
     </StyledNavbar>

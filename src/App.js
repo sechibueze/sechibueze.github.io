@@ -28,6 +28,7 @@ const routes = createBrowserRouter([
     element: <Portfolio />,
   },
 ]);
+
 const GlobalStyle = createGlobalStyle`
 *{
   margin: 0;
@@ -53,7 +54,7 @@ html{
 body{
   width: 100%;
   font-family: 'font__regular', Verdana,  sans-serif;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
   @media screen and (min-width: 768px) {
     margin-bottom: 0;
   }
@@ -61,7 +62,7 @@ body{
 
 .container{
   width: 100%;
-  padding: 0 1.5rem;
+  padding: 0 .5rem;
   @media screen and (min-width: 768px) {
     width: 80%;
     margin: auto;
@@ -99,7 +100,7 @@ const App = () => {
       <React.Fragment>
         <GlobalStyle />
         <StyledApp>
-          <div style={{ width: '100%', padding: '1rem 0' }}>
+          <div style={{ width: '100%' }}>
             <div className='container'>
               <Navbar handleThemeChange={handleThemeChange} />
             </div>
