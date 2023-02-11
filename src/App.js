@@ -74,9 +74,10 @@ const StyledApp = styled.div`
 `;
 const theme = {
   colors: {
-    primary: '#03045e',
-    dark: '#3d0000',
-    light: '#f1faee',
+    primary: '#01257D',
+    text: '#00FFFF',
+    // dark: '#3d0000',
+    light: '#F8F8F9',
   },
 };
 const App = () => {

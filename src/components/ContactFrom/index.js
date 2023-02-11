@@ -10,8 +10,8 @@ import {
 
 const ContactForm = ({ data, errors, handleChange, onSubmit }) => {
   return (
-    <StyledForm name='contact' method='POST' data-netlify='true'>
-      <input type='hidden' name='form-name' value='contact' />
+    <StyledForm name='seComputing' method='POST' data-netlify='true'>
+      {/* <input type='hidden' name='form-name' value='contact' /> */}
 
       <p
         style={{
