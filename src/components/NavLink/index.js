@@ -6,6 +6,9 @@ const StyledLink = styled.a`
   justify-content: center;
   align-items: center;
   font-size: 1rem;
+  font-family: 'font__medium';
+  font-weight: bolder;
+  text-decoration: none;
 
   > img {
     width: 1rem;

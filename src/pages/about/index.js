@@ -3,7 +3,7 @@ import person from 'assets/images/me.jpg';
 import Experience from 'components/Experience';
 import Skill from 'components/Skill';
 import projectIcon from 'assets/images/project__icon.png';
-const cardShadow = '0.25rem 0.1rem 0.25rem #ccc;';
+import { CARD_SHADOW } from 'constants/style.constant';
 const StyledAbout = styled.div`
   background: aliceblue;
 `;
@@ -74,14 +74,22 @@ const StyledContainer = styled.div`
   > div {
     border-radius: 0.85rem;
     background: #fff;
-    box-shadow: ${cardShadow};
+    box-shadow: ${CARD_SHADOW};
     padding: 1.2rem;
+  }
+
+  @media screen and (min-width: 960px) {
+    flex-direction: row;
+
+    > div {
+      width: 50%;
+    }
   }
 `;
 const StyledSkillsSection = styled.div`
   border-radius: 0.85rem;
   background: #fff;
-  box-shadow: ${cardShadow};
+  box-shadow: ${CARD_SHADOW};
   padding: 1.2rem;
   .skill-container {
     width: 100%;

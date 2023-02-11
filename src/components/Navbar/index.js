@@ -1,11 +1,6 @@
-import styled from 'styled-components';
 import NavLinkList from '../NavLinkList';
 import { StyledNavbar } from './navbar.style';
-const StyledH1 = styled.h1`
-  font-family: 'font__bold';
-  font-weight: bolder;
-  font-size: 1.75rem;
-`;
+import { StyledH1 } from 'assets/styles';
 const Navbar = () => {
   return (
     <StyledNavbar>

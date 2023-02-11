@@ -8,9 +8,9 @@ import {
   StyledTextArea,
 } from './contactFrom.style';
 
-const ContactForm = ({ data, errors, handleChange, onSubmit }) => {
+const ContactForm = ({ data, handleChange }) => {
   return (
-    <StyledForm name='seComputing' method='POST' data-netlify='true'>
+    <StyledForm action='#' name='seComputing' method='POST' data-netlify='true'>
       {/* <input type='hidden' name='form-name' value='contact' /> */}
 
       <p

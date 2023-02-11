@@ -1,7 +1,17 @@
 import styled from 'styled-components';
-import heroImagePath from '../../assets/images/me.jpg';
+import heroImagePath from 'assets/images/me.jpg';
 import SocialIcons from '../SocialIcons';
+import { StyledH1 } from 'assets/styles';
+
+const Heading = styled(StyledH1)`
+  font-size: 1.85rem;
+  color: ${({ theme }) => theme.colors.primary};
+  @media screen and (min-width: 980px) {
+    font-size: 3.5rem;
+  }
+`;
 const StyledHeroBackground = styled.div``;
+
 const StyledHeroContainer = styled.div`
   width: 100%;
   display: flex;
@@ -23,7 +33,7 @@ const StyledHeroContainer = styled.div`
       width: 15rem;
       height: 15rem;
       border-radius: 50%;
-      border: 0.5rem dotted black;
+      border: 0.5rem dotted ${({ theme }) => theme.colors.primary};
       @media screen and (min-width: 768px) {
         width: 20rem;
         height: 20rem;
@@ -38,13 +48,16 @@ const StyledHeroContainer = styled.div`
     justify-content: center;
     align-items: center;
 
-    h1 {
-      font-family: 'font__bold';
-      font-size: 1.85rem;
-      @media screen and (min-width: 980px) {
-        font-size: 3.5rem;
+    .text-bit {
+      display: inline-block;
+      text-align: center;
+      width: 100%;
+      @media screen and (min-width: 768px) {
+        text-align: left;
+        margin-top: 1rem;
       }
     }
+
     h3 {
       font-family: 'font__medium';
       font-size: 1.2rem;
@@ -71,17 +84,9 @@ const HeroHeader = () => {
       <div className='container'>
         <StyledHeroContainer>
           <div className='hero-content'>
-            <span
-              style={{
-                display: 'inline-block',
-                textAlign: 'left',
-                width: '100%',
-              }}
-            >
-              Hello 👋
-            </span>
-            <h1>Samuel Chibueze</h1>
-            <h3>Software Engineer & Educator</h3>
+            <span className='text-bit'>Hello 👋</span>
+            <Heading>Samuel Chibueze</Heading>
+            <h3>Software & Cloud DevOps Engineer</h3>
             <p className='intro-content'>
               Everything I do begins with a vision, and proceed by a blend of
               faith and fact, to deliver value to stakeholders, impacting

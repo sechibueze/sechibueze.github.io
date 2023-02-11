@@ -8,23 +8,41 @@ export const StyledWork = styled.div`
   border-radius: 0.8rem;
   box-shadow: ${CARD_SHADOW};
   display: flex;
+  gap: 1rem;
   flex-direction: column;
 
+  > img {
+    border-radius: 0.5rem;
+    width: 100%;
+  }
+
   > div {
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 0.85rem;
 
+    > h4 {
+      font-family: 'font__bold';
+      font-weight: bolder;
+    }
+
     > a {
       padding: 0.75rem 2rem;
       border-radius: 0.5rem;
-      background: blueviolet;
-      color: aliceblue;
+      background: ${({ theme }) => theme.colors.primary};
+      color: ${({ theme }) => theme.colors.light};
       text-decoration: none;
       font-weight: bold;
-      font-family: 'font__medium';
+      font-family: 'font__bold';
       font-size: 0.85rem;
       text-align: center;
+      transition: all 0.5s;
+
+      &:hover {
+        color: ${({ theme }) => theme.colors.primary};
+        background: ${({ theme }) => theme.colors.light};
+      }
     }
   }
 
@@ -32,5 +50,12 @@ export const StyledWork = styled.div`
     flex-direction: row;
     justify-content: center;
     align-items: center;
+
+    > img {
+      width: 30%;
+    }
+    > div {
+      width: 70%;
+    }
   }
 `;

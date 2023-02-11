@@ -9,6 +9,7 @@ import React, { useEffect, useState } from 'react';
 import fontBlack from 'assets/fonts/Poppins-Black.ttf';
 import fontMedium from 'assets/fonts/Poppins-Medium.ttf';
 import fontRegular from 'assets/fonts/Poppins-Regular.ttf';
+
 const routes = createBrowserRouter([
   {
     path: '/',
@@ -55,6 +56,8 @@ body{
   width: 100%;
   font-family: 'font__regular', Verdana,  sans-serif;
   margin-bottom: 5rem;
+  color: ${({ theme }) => theme.colors.primary};
+  background:#f0f0f0;
   @media screen and (min-width: 768px) {
     margin-bottom: 0;
   }
@@ -75,8 +78,8 @@ const StyledApp = styled.div`
 const theme = {
   colors: {
     primary: '#01257D',
-    text: '#00FFFF',
-    // dark: '#3d0000',
+    text: '#111439',
+    dark: '#3d0000',
     light: '#F8F8F9',
   },
 };
@@ -101,7 +104,7 @@ const App = () => {
       <React.Fragment>
         <GlobalStyle />
         <StyledApp>
-          <div style={{ width: '100%' }}>
+          <div style={{ width: '100%', background: `${theme.colors.light}` }}>
             <div className='container'>
               <Navbar handleThemeChange={handleThemeChange} />
             </div>

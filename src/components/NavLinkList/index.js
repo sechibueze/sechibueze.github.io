@@ -28,7 +28,7 @@ const StyledNavLinks = styled.div`
   position: fixed;
   left: 0;
   bottom: 0;
-  background-color: white;
+  background: ${({ theme }) => theme.colors.light};
 
   @media screen and (min-width: 768px) {
     position: relative;

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const StyledButton = styled.button`
   padding: 1rem 2.85rem;
   background: ${({ theme }) => theme.colors.primary};
-  color: ${({ theme }) => theme.colors.text};
+  color: ${({ theme }) => theme.colors.light};
   outline: 0;
   border: 0;
   display: inline-block;
@@ -14,7 +14,7 @@ const StyledButton = styled.button`
   cursor: pointer;
   &:hover {
     color: ${({ theme }) => theme.colors.primary};
-    background: ${({ theme }) => theme.colors.text};
+    background: ${({ theme }) => theme.colors.light};
     border: 0.125rem solid ${({ theme }) => theme.colors.primary};
   }
 `;

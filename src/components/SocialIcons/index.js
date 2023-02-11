@@ -15,7 +15,7 @@ const socialMedia = [
     icon: githubIcon,
   },
   {
-    href: '#',
+    href: 'https://wa.me/2348136363673',
     label: 'Whatsapp',
     icon: whatsappIcon,
   },
@@ -30,6 +30,7 @@ const StyledSocialIcons = styled.div`
   .title {
     font-family: 'font__medium';
     text-align: center;
+    font-weight: bolder;
     @media screen and (min-width: 768px) {
       text-align: left;
     }
