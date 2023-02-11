@@ -1,9 +1,12 @@
+import { CARD_SHADOW } from 'constants/style.constant';
 import styled from 'styled-components';
 
 export const StyledForm = styled.form`
   width: 100%;
   border-radius: 1rem;
-  margin: auto;
+  margin: 1rem auto;
+  box-shadow: ${CARD_SHADOW};
+  padding: 1rem;
 
   @media screen and (min-width: 768px) {
     width: 60%;
@@ -32,6 +35,8 @@ export const StyledInput = styled.input`
   outline: 0;
   padding: 0.5rem;
   font-size: 1rem;
+  font-family: 'font__regular';
+  border-radius: 0.25rem;
 `;
 export const StyledTextArea = styled.textarea`
   resize: none;
@@ -40,4 +45,6 @@ export const StyledTextArea = styled.textarea`
   outline: 0;
   padding: 0.5rem;
   font-size: 1rem;
+  font-family: 'font__regular';
+  border-radius: 0.25rem;
 `;

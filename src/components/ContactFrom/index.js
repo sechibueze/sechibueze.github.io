@@ -50,8 +50,9 @@ const ContactForm = ({ data, errors, handleChange, onSubmit }) => {
         </StyledFormElementContainer>
         <Button
           label={'Send'}
+          type='submit'
           style={{
-            marginTop: '1.5rem',
+            marginTop: '1rem',
           }}
         />
       </StyledFormFieldsContainer>

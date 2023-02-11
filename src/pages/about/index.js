@@ -90,6 +90,13 @@ const StyledSkillsSection = styled.div`
     gap: 0.85rem 0.5rem;
   }
 `;
+
+const StyledH3 = styled.h3`
+  font-family: 'font__bold';
+  font-size: 1.2rem;
+  font-weight: bolder;
+  padding: 0.5rem 0;
+`;
 const About = () => {
   return (
     <StyledAbout>
@@ -97,7 +104,7 @@ const About = () => {
         <div className='container'>
           <StyledPersonal>
             <StyledPersoanlContent>
-              <h1>About</h1>
+              <StyledH3>About</StyledH3>
               <div className='data-line-container'>
                 <span className='label'>WHO</span>
                 <span className='value'>Samuel Chibueze</span>
@@ -127,7 +134,7 @@ const About = () => {
         <div className='container'>
           <StyledContainer>
             <div>
-              <h2>Experience</h2>
+              <StyledH3>Experience</StyledH3>
               <div>
                 <Experience
                   company={'ICTG'}
@@ -144,7 +151,7 @@ const About = () => {
               </div>
             </div>
             <div>
-              <h2>Education</h2>
+              <StyledH3>Education</StyledH3>
               <div>
                 <Experience
                   company={'Udacity'}
@@ -164,7 +171,7 @@ const About = () => {
       <StyledSection>
         <div className='container'>
           <StyledSkillsSection>
-            <h2>Skills</h2>
+            <StyledH3>Skills</StyledH3>
 
             <div className='skill-container'>
               <Skill label='JavaScript' />

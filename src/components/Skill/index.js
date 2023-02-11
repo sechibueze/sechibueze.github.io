@@ -5,6 +5,7 @@ const StyledSkill = styled.div`
   box-shadow: ${cardShadow};
   padding: 0.5rem 1rem;
   border-radius: 1rem;
+  font-size: 0.85rem;
 `;
 const Skill = ({ label }) => {
   return <StyledSkill>{label && <span>{label}</span>}</StyledSkill>;

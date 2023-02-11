@@ -1,5 +1,11 @@
+import styled from 'styled-components';
 import NavLinkList from '../NavLinkList';
 import { StyledNavbar } from './navbar.style';
+const StyledH1 = styled.h1`
+  font-family: 'font__bold';
+  font-weight: bolder;
+  font-size: 1.75rem;
+`;
 const Navbar = () => {
   return (
     <StyledNavbar>
@@ -10,7 +16,7 @@ const Navbar = () => {
             textDecoration: 'none',
           }}
         >
-          <h1>@computingCEO</h1>
+          <StyledH1>@computingCEO</StyledH1>
         </a>
       </div>
       <NavLinkList />
