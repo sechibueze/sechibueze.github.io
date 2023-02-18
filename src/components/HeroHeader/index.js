@@ -52,9 +52,11 @@ const StyledHeroContainer = styled.div`
       display: inline-block;
       text-align: center;
       width: 100%;
+      font-weight: bolder;
+      margin-top: 1rem;
       @media screen and (min-width: 768px) {
         text-align: left;
-        margin-top: 1rem;
+        margin: 0;
       }
     }
 
@@ -84,13 +86,13 @@ const HeroHeader = () => {
       <div className='container'>
         <StyledHeroContainer>
           <div className='hero-content'>
-            <span className='text-bit'>Hello 👋</span>
+            <span className='text-bit'>Hi 👋</span>
             <Heading>Samuel Chibueze</Heading>
             <h3>Software & Cloud DevOps Engineer</h3>
             <p className='intro-content'>
               Everything I do begins with a vision, and proceed by a blend of
               faith and fact, to deliver value to stakeholders, impacting
-              communities and ecosystem
+              communities and ecosystems
             </p>
             <SocialIcons heading={"Let's Connect"} />
           </div>

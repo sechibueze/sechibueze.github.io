@@ -4,6 +4,7 @@ import Experience from 'components/Experience';
 import Skill from 'components/Skill';
 import projectIcon from 'assets/images/project__icon.png';
 import { CARD_SHADOW } from 'constants/style.constant';
+import { EXPERIENCE } from 'constants/about.constant';
 const StyledAbout = styled.div`
   background: aliceblue;
 `;
@@ -131,7 +132,7 @@ const About = () => {
                 <img
                   style={{ borderRadius: '1rem', maxHeight: '25rem' }}
                   src={person}
-                  alt='Actioning'
+                  alt='Samuel Chibueze'
                 />
               </figure>
             </StyledPersonalFigure>
@@ -144,18 +145,21 @@ const About = () => {
             <div>
               <StyledH3>Experience</StyledH3>
               <div>
-                <Experience
-                  company={'ICTG'}
-                  role='Fullstack Software Engineer'
-                  period={'March, 2022 - Present'}
-                  imgSrc={projectIcon}
-                  jobInfo='Build open source software for the Build open source software for the Build open source software for the '
-                />
-                <Experience
-                  company={'Raenest'}
-                  role='Frontend Engineer'
-                  period={'June, 2021 - March, 2022'}
-                />
+                {EXPERIENCE.map((experience) => {
+                  const { company, role, period, logo, jobInfo } =
+                    experience || {};
+                  const id = `${company}-${role}`;
+                  return (
+                    <Experience
+                      key={id}
+                      company={company}
+                      role={role}
+                      period={period}
+                      imgSrc={logo || projectIcon}
+                      jobInfo={jobInfo}
+                    />
+                  );
+                })}
               </div>
             </div>
             <div>
