@@ -14,6 +14,7 @@ const StyledExperience = styled.article`
   }
   img {
     width: 1.5rem;
+    filter: ${({ theme }) => theme.filters.primary};
   }
   .details {
     display: flex;

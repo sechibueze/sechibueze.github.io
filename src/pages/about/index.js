@@ -4,7 +4,7 @@ import Experience from 'components/Experience';
 import Skill from 'components/Skill';
 import projectIcon from 'assets/images/project__icon.png';
 import { CARD_SHADOW } from 'constants/style.constant';
-import { EXPERIENCE } from 'constants/about.constant';
+import { EDUCATION, EXPERIENCE, SKILLS } from 'constants/about.constant';
 const StyledAbout = styled.div`
   background: aliceblue;
 `;
@@ -165,16 +165,20 @@ const About = () => {
             <div>
               <StyledH3>Education</StyledH3>
               <div>
-                <Experience
-                  company={'Udacity'}
-                  role='Cloud DevOps Engineer'
-                  period={'March, 2022 - Present'}
-                />
-                <Experience
-                  company={'Raenest'}
-                  role='Frontend Engineer'
-                  period={'June, 2021 - March, 2022'}
-                />
+                {EDUCATION.map((education) => {
+                  const { school, course, period, logo, description } =
+                    education || {};
+
+                  return (
+                    <Experience
+                      company={school || ''}
+                      role={course || ''}
+                      period={period}
+                      jobInfo={description || ''}
+                      logo={logo || ''}
+                    />
+                  );
+                })}
               </div>
             </div>
           </StyledContainer>
@@ -186,7 +190,10 @@ const About = () => {
             <StyledH3>Skills</StyledH3>
 
             <div className='skill-container'>
-              <Skill label='JavaScript' />
+              {SKILLS.map((skill) => (
+                <Skill key={skill.label} label={skill.label} />
+              ))}
+
               <Skill label='Python' />
               <Skill label='Reactjs' />
               <Skill label='Styled Compnents' />

@@ -82,6 +82,9 @@ const theme = {
     dark: '#3d0000',
     light: '#F8F8F9',
   },
+  filters: {
+    primary: `invert(7%) sepia(82%) saturate(6890%) hue-rotate(203deg) brightness(99%) contrast(98%)`,
+  },
 };
 const App = () => {
   const [selectedTheme, setSelectedTheme] = useState('light-theme');

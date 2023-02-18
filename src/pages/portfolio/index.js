@@ -42,7 +42,7 @@ function getWorks() {
     {
       title: 'Education Fund For Africa',
       description:
-        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only fi',
+        'Education Fund For Africa is a platform for social innovators and educators in Africa to access public funding for social good',
 
       url: 'https://ef4a.netlify.app/',
       screenShotUrl: ef4aIcon,
@@ -51,19 +51,19 @@ function getWorks() {
     {
       title: 'Transital',
       description:
-        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only fi',
+        'Transital allows road users to report traffic situation thereby helping traffic unit to proactively intervene and remedy undesirable traffic situation such as break downs, road blockage, accidents among others.',
       url: 'https://winners-traffic-watch.netlify.app/',
       screenShotUrl: transitIcon,
-      skills: [],
+      skills: ['Nodejs', 'TypeScript', 'RESTful API', 'TypeORM', 'Nextjs'],
     },
     {
       title: 'Glorankr',
       timeline: '',
       description:
-        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only fi',
+        'With Glorankr, users can access information about places of interests',
       url: 'https://glorankr.vercel.app/',
       screenShotUrl: glorankrIcon,
-      skills: [],
+      skills: ['Nextjs'],
     },
   ];
 }

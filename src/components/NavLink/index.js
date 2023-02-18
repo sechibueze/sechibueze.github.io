@@ -12,6 +12,7 @@ const StyledLink = styled.a`
 
   > img {
     width: 1rem;
+    filter: ${({ theme }) => theme.filters.primary};
     @media screen and (min-width: 768px) {
       display: none;
     }
